@@ -16,6 +16,10 @@ function generateBookingId() {
 }
 
 //Route to list all rooms
+app.get('/', (req,res)=> {
+    res.send('<h1>This is room booking for various postman endpoints refer github images</h1>')
+})
+
 app.get('/rooms', (req, res) => {
     res.json(rooms);
 });
